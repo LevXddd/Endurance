@@ -1,0 +1,16 @@
+#include <cassert>
+#include <iostream>
+int main() {
+  std::cout << "Enter an integer" << '\n';
+  int x{};
+  std::cin >> x;
+  assert(x != 0);
+  if (x == 0) {
+    std::cout << "Error: you cannot divide by zero" << '\n';
+  } 
+  else if (x != 0) {
+
+    std::cout << "Your division from 100 is: " << 100 / x << '\n';
+    return 0;
+  }
+}
