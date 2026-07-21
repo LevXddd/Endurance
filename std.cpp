@@ -1,4 +1,3 @@
-#include <cassert>
 #include <cstdlib>
 #include <iostream>
 
@@ -17,8 +16,7 @@ int main() {
 
   std::cout << "Write the second number (y): ";
   double y(getNumber());
-  assert(y != 0);
-
+  
   if (y == 0) {
     std::cout << "The proccess is cancelled, division on zero is unavailable";
     return EXIT_FAILURE;
