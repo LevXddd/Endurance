@@ -1,0 +1,23 @@
+#include <cstdlib>
+#include <iostream>
+
+void functionWE() { std::cout << "Hello customer! "; }
+
+void functionOne(int x, int y) {
+  if (y == 0) {
+    std::cout << "The process is cancelled";
+    return;
+  }
+  std::cout << x / y << '\n';
+  std::cout << "Everything is checked.\n";
+}
+
+int main() {
+  functionWE();
+  std::cout << "Write the integrals: ";
+  int x{};
+  int y{};
+  std::cin >> x >> y;
+  functionOne(x, y);
+  return EXIT_SUCCESS;
+}
