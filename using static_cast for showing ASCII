@@ -1,0 +1,20 @@
+#include <cstdlib>
+#include <iostream>
+
+void hello() { std::cout << "Enter a single character: "; }
+
+char getInput() {
+  char ch{};
+  std::cin >> ch;
+  return ch;
+}
+void function(const char ch) {
+  std::cout << "You entered: " << ch
+            << " , which ASCII code is: " << static_cast<int>(ch) << '\n';
+}
+int main() {
+  hello();
+  char ch{getInput()};
+  function(ch);
+  return EXIT_SUCCESS;
+}
