@@ -21,7 +21,6 @@ std::cout << sv;                    // BROKEN: prints garbled text (e.g. "Somet"
 - Reassigning to a longer string can force a new heap allocation.
 - The string_view never "knows" the data moved — it keeps pointing at the old address.
 
-## Related
-- [[Dangling string_view (Returning a View to a Local String)]]
-- [[Const and constexpr]]
-- [[Why is using std::string relatively high-demanding]]
+## However, there is on but
+Even if your new reassigment can contain less letters, it is quite unrecommended because C++ does not guarantee that everything will work. The advice is this:
+Do not use std::string_view with reassignment because it will mostly give a garbage.
