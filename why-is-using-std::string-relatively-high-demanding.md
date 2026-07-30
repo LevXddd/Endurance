@@ -15,5 +15,5 @@ int main()
 For example, this example proves the problem. You are copying a value to s, after this you again copy from s to a function. It requires a lot of resources.
 Because of this, we have two options:
 use const + & - but it will work only when you have only std::string. and if not it will not work.
-or using std::string_view which is universal and works for every type(like string and not string) which is commonly used for function parameters
+or using std::string_view which is universal and works for every type(like string and not string) which is commonly used for function parameters.
 Nowadays all prefer to use std::sting_view in big codes, because other programmers might write just like printString("..."); instead of printString(s);
