@@ -2,11 +2,11 @@
 
 Here is the first problem:
 
-```cpp
+```
 std::string s{ "Hello, world!" };
 ```
 
-You might think: what's complex about this? Actually, quite a lot happens behind the scenes. The program makes a **copy** of Hello, world and stores it into s.
+You might think: what's complex about this? Actually, quite a lot happens behind the scenes. The program makes a copy of Hello, world and stores it into s.
 
 The compiler scans the literal and counts how many characters are present (13 characters + a null terminator 0), then requests an allocation of 14 bytes for it. The operating system finds available memory and hands back an address to the string object. After that, the CPU copies each character — H, then e, then l... and etcetera — one by one, writing in s's memory.
 
