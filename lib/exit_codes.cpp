@@ -6,6 +6,8 @@ void helloGuest() { std::cout << "Hello, customer: " << '\n'; }
 int itsPurpose() {
 
   std::cout << "Enter the integer(not zero): ";
+
+
   int x{};
   std::cin >> x;
   return x;
