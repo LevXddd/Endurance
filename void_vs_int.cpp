@@ -19,3 +19,4 @@ int main() {
 }
 
 
+// main idea - void does not require return.
